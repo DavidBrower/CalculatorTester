@@ -2,9 +2,9 @@
 {
     public class Calculator
     {
-        public double Add(double d, double d1)
+        public decimal Add(decimal firstAddend, decimal secondAddend)
         {
-            throw new System.NotImplementedException();
+            return firstAddend + secondAddend;
         }
     }
 }
