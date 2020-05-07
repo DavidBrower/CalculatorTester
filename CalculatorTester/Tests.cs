@@ -7,6 +7,13 @@ namespace CalculatorTester
     public class Tests
     {
         [TestMethod]
+        public void CanSubtractTwoDecimals()
+        {
+            var calculator = new Calculator();
+            calculator.Subtract(3.6M, 2.4M).Should().Be(1.2M);
+        }
+
+        [TestMethod]
         public void CanAddTwoDecimals()
         {
             var calculator = new Calculator();
