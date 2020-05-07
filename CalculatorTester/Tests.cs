@@ -12,5 +12,12 @@ namespace CalculatorTester
             var calculator = new Calculator();
             calculator.Add(2.3M, 5.6M).Should().Be(7.9M);
         }
+
+        [TestMethod]
+        public void CanAddTwoIntegers()
+        {
+            var calculator = new Calculator();
+            calculator.Add(3, 5).Should().Be(8);
+        }
     }
 }
