@@ -26,5 +26,12 @@ namespace CalculatorTester
             var calculator = new Calculator();
             calculator.Add(3, 4.5M).Should().Be(7.5M);
         }
+
+        [TestMethod]
+        public void CanMultiplyTwoDecimals()
+        {
+            var calculator = new Calculator();
+            calculator.Multiply(3.4M, 4.6M).Should().Be(15.64M);
+        }
     }
 }

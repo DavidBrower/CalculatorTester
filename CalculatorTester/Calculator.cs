@@ -6,5 +6,10 @@
         {
             return firstAddend + secondAddend;
         }
+
+        public decimal Multiply(decimal multiplicand, decimal multiplier)
+        {
+            return multiplicand * multiplier;
+        }
     }
 }
