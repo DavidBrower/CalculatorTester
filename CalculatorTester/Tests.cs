@@ -40,5 +40,12 @@ namespace CalculatorTester
             var calculator = new Calculator();
             calculator.Multiply(3, 2).Should().Be(6);
         }
+
+        [TestMethod]
+        public void CanMultiplyIntegerAndDecimal()
+        {
+            var calculator = new Calculator();
+            calculator.Multiply(3, 6M).Should().Be(18M);
+        }
     }
 }
