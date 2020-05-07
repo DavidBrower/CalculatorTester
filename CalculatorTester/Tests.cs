@@ -49,12 +49,18 @@ namespace CalculatorTester
             calculator.Add(3, 5).Should().Be(8);
         }
 
+        /// <summary>
+        /// Tests whether an integer and a decimal can be added
+        /// </summary>
         [TestMethod]
         public void CanAddAnIntegerAndADecimal()
         {
             calculator.Add(3, 4.5M).Should().Be(7.5M);
         }
 
+        /// <summary>
+        /// Tests whether two decimals can be multiplied
+        /// </summary>
         [TestMethod]
         public void CanMultiplyTwoDecimals()
         {
