@@ -18,5 +18,10 @@ namespace CalculatorTester
         {
             return minuend - subtrahend;
         }
+
+        public decimal Divide(decimal dividend, decimal divisor)
+        {
+            return dividend / divisor;
+        }
     }
 }
