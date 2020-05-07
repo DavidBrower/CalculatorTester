@@ -19,5 +19,12 @@ namespace CalculatorTester
             var calculator = new Calculator();
             calculator.Add(3, 5).Should().Be(8);
         }
+
+        [TestMethod]
+        public void CanAddAnIntegerAndADecimal()
+        {
+            var calculator = new Calculator();
+            calculator.Add(3, 4.5M).Should().Be(7.5M);
+        }
     }
 }
