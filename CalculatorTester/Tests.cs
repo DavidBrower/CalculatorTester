@@ -33,5 +33,12 @@ namespace CalculatorTester
             var calculator = new Calculator();
             calculator.Multiply(3.4M, 4.6M).Should().Be(15.64M);
         }
+
+        [TestMethod]
+        public void CanMultiplyTwoIntegers()
+        {
+            var calculator = new Calculator();
+            calculator.Multiply(3, 2).Should().Be(6);
+        }
     }
 }
